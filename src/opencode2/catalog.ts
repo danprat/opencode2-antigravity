@@ -37,7 +37,7 @@ export const ANTIGRAVITY_INTEGRATION_ID = ANTIGRAVITY_PROVIDER_ID;
  */
 export const ANTIGRAVITY_AISDK_PACKAGE = process.env.ANTIGRAVITY_OPENCODE2_DEV_ENTRY
   ? `aisdk:${pathToFileURL(process.env.ANTIGRAVITY_OPENCODE2_DEV_ENTRY).href}`
-  : "aisdk:@danprat/opencode-antigravity";
+  : "aisdk:@danprat/opencode2-antigravity";
 
 /** Translate one catalog entry's variants into the 2.0 `variants` shape. */
 export function catalogVariantsToInfo(

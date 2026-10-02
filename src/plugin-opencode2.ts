@@ -34,7 +34,7 @@ import type { Cleanup, Plugin2, PluginContext } from "./opencode2/types.js";
  * prefers `exports["./server"]` and then calls `server()`, so classic 1.x
  * hooks still run from the same module.
  *
- * Load with:  { "plugins": ["@danprat/opencode-antigravity/plugin/opencode2"] }
+ * Load with:  { "plugins": ["@danprat/opencode2-antigravity/plugin/opencode2"] }
  */
 
 export const ANTIGRAVITY_V2_PLUGIN_ID = "antigravity.provider";
@@ -43,6 +43,7 @@ export const ANTIGRAVITY_V2_PLUGIN_ID = "antigravity.provider";
 export function isAntigravityPackage(pkg: string, providerID: string): boolean {
   if (providerID === ANTIGRAVITY_PROVIDER_ID) return true;
   return (
+    pkg.includes("@danprat/opencode2-antigravity") ||
     pkg.includes("@danprat/opencode-antigravity") ||
     pkg.includes("@rahularya01/opencode-antigravity") ||
     /opencode-antigravity[/\\]dist[/\\](sdk|index)\.js/.test(pkg)

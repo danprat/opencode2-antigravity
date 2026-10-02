@@ -84,6 +84,7 @@ describe("isAntigravityPackage", () => {
     expect(isAntigravityPackage("aisdk:something-else", "antigravity")).toBe(true);
   });
   it("matches by package specifier", () => {
+    expect(isAntigravityPackage("aisdk:@danprat/opencode2-antigravity", "other")).toBe(true);
     expect(isAntigravityPackage("aisdk:@danprat/opencode-antigravity", "other")).toBe(true);
     expect(isAntigravityPackage("aisdk:@rahularya01/opencode-antigravity", "other")).toBe(true);
   });

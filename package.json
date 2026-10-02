@@ -1,5 +1,5 @@
 {
-  "name": "@danprat/opencode-antigravity",
+  "name": "@danprat/opencode2-antigravity",
   "version": "0.6.0",
   "description": "OpenCode plugin that provides Google Antigravity / Cloud Code Assist models (Gemini, Claude, GPT-OSS) to OpenCode via an AI SDK LanguageModelV3 provider. Supports OpenCode 1.x (classic entry) and OpenCode 2.0 (`plugin/opencode2`).",
   "author": "Rahul Arya",

@@ -1,10 +1,10 @@
-# opencode-antigravity
+# opencode2-antigravity
 
-[![npm version](https://img.shields.io/npm/v/@danprat/opencode-antigravity?logo=npm)](https://www.npmjs.com/package/@danprat/opencode-antigravity)
-[![license](https://img.shields.io/npm/l/@danprat/opencode-antigravity)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/@danprat/opencode2-antigravity?logo=npm)](https://www.npmjs.com/package/@danprat/opencode2-antigravity)
+[![license](https://img.shields.io/npm/l/@danprat/opencode2-antigravity)](LICENSE)
 [![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?logo=github)](https://github.com/sponsors/Rahularya01)
 
-**opencode-antigravity** is an [OpenCode](https://opencode.ai) plugin that lets OpenCode talk directly to Google Antigravity / Cloud Code Assist models — Gemini, plus the Claude and GPT-OSS models Antigravity also advertises. Sign in with Google, pick a model, and go. Under the hood it handles OAuth login, native SSE streaming, model routing, and quota diagnostics itself, so it never shells out to an external Antigravity CLI.
+**opencode2-antigravity** is an [OpenCode](https://opencode.ai) plugin that lets OpenCode talk directly to Google Antigravity / Cloud Code Assist models — Gemini, plus the Claude and GPT-OSS models Antigravity also advertises. Sign in with Google, pick a model, and go. Under the hood it handles OAuth login, native SSE streaming, model routing, and quota diagnostics itself, so it never shells out to an external Antigravity CLI.
 
 Using [Pi Coding Agent](https://pi.dev) instead of OpenCode? Install the companion extension [`pi-antigravity`](https://www.npmjs.com/package/pi-antigravity).
 
@@ -30,7 +30,7 @@ Using [Pi Coding Agent](https://pi.dev) instead of OpenCode? Install the compani
 
 ## Install
 
-> Fork note: this repo (`@danprat/opencode-antigravity`) adds an OpenCode 2.0
+> Fork note: this repo (`@danprat/opencode2-antigravity`) adds an OpenCode 2.0
 > entrypoint on top of upstream
 > [`@rahularya01/opencode-antigravity`](https://github.com/Rahularya01/opencode-antigravity).
 > OpenCode 1.x instructions below are unchanged.
@@ -42,7 +42,7 @@ Add the 2.0 entrypoint to your OpenCode config (`~/.config/opencode/opencode.jso
 ```json
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugins": ["@danprat/opencode-antigravity/plugin/opencode2"]
+  "plugins": ["@danprat/opencode2-antigravity/plugin/opencode2"]
 }
 ```
 
@@ -76,7 +76,7 @@ Add the plugin to your global OpenCode config (`~/.config/opencode/opencode.json
 ```json
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugin": ["@danprat/opencode-antigravity"]
+  "plugin": ["@danprat/opencode2-antigravity"]
 }
 ```
 
@@ -85,9 +85,9 @@ Or add the same `plugin` entry to a project's `opencode.json`. OpenCode download
 Optional global install:
 
 ```bash
-npm install -g --ignore-scripts @danprat/opencode-antigravity
+npm install -g --ignore-scripts @danprat/opencode2-antigravity
 # or
-bun add -g --ignore-scripts @danprat/opencode-antigravity
+bun add -g --ignore-scripts @danprat/opencode2-antigravity
 ```
 
 To load a local checkout after `bun run build`:
